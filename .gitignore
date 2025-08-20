@@ -2,10 +2,13 @@ bin/
 obj/
 .vscode/
 .idea/
+.vs/
 *.user
 *.suo
 *.DS_Store
 *.swp
 *.log
 *.sqlite
+*.db
+*.db-*
 Training.Api/Properties/launchSettings.json

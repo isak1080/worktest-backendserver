@@ -31,5 +31,9 @@ app.UseHttpsRedirection();
 //     var db = scope.ServiceProvider.GetRequiredService<TrainingDbContext>();
 //     await TrainingDataSeed.SeedData(db);
 // }
-
+app.MapGet("/", () => "Hello World!");
+app.MapGet("/seed", async (TrainingDbContext db) =>
+{
+    await TrainingDataSeed.SeedData(db);
+});
 app.Run();
